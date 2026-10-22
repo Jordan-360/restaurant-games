@@ -60,8 +60,8 @@ h1 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
   gap: 8px;
   width: min(90vw, 360px);
-  aspect-ratio: 1;
   padding: 8px;
+  aspect-ratio: 1;
   background: var(--line);
   border-radius: 16px;
 }
