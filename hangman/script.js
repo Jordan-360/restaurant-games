@@ -130,6 +130,7 @@ function showWord() {
     wordDisplay.appendChild(span);
   }
 }
+
 function showFigure() {
   const wrongGuesses = MAX_ATTEMPTS - attemptsLeft;
 
