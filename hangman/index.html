@@ -15,8 +15,29 @@
       <p class="instructions">
         Guess the word by selecting letters. You have 6 attempts!
       </p>
-      <div id="wordDisplay"></div>
-      <div id="letterButtons"></div>
+      <svg id="figure" viewBox="0 0 200 220" aria-hidden="true">
+        <g class="gallows">
+          <line x1="20" y1="210" x2="140" y2="210" />
+          <line x1="50" y1="210" x2="50" y2="20" />
+          <line x1="50" y1="20" x2="130" y2="20" />
+          <line x1="130" y1="20" x2="130" y2="45" />
+        </g>
+
+        <circle class="part" cx="130" cy="65" r="20" />
+        <line class="part" x1="130" y1="85" x2="130" y2="140" />
+        <line class="part" x1="130" y1="100" x2="105" y2="120" />
+        <line class="part" x1="130" y1="100" x2="155" y2="120" />
+        <line class="part" x1="130" y1="140" x2="110" y2="175" />
+        <line class="part" x1="130" y1="140" x2="150" y2="175" />
+      </svg>
+      <div id="wordDisplay">
+        <span class="letter"></span>
+        <span class="letter"></span>
+        <span class="letter"></span>
+        <span class="letter"></span>
+        <span class="letter"></span>
+      </div>
+      <div id="lettersButton"></div>
       <p id="attemptsLeft">Attempts left: 6</p>
       <button id="resetButton">Reset Game</button>
     </div>

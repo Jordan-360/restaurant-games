@@ -1,7 +1,8 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+  "editor.inlineSuggest.enabled": false,
+  "github.copilot.enable": {
+    "*": false
   }
 }

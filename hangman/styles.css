@@ -69,3 +69,100 @@ h1 {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+#wordDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  min-height: 3rem;
+}
+
+.letter {
+  width: 2rem;
+  height: 2.75rem;
+  border-bottom: 3px solid var(--line);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+  text-transform: uppercase;
+}
+
+#lettersButton {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  width: 100%;
+}
+
+.letter-btn {
+  aspect-ratio: 1;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.letter-btn.correct {
+  border-color: var(--correct);
+  background: var(--correct);
+  color: var(--surface);
+}
+
+.letter-btn.wrong {
+  border-color: var(--wrong);
+  background: var(--wrong);
+  color: var(--surface);
+}
+
+.letter-btn:disabled {
+  cursor: default;
+}
+
+#attemptsLeft {
+  margin: 0;
+  min-height: 1.6em;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#resetButton {
+  padding: 14px 32px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#figure {
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+}
+
+#figure line,
+#figure circle {
+  fill: none;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+#figure .gallows line {
+  stroke: var(--gallows);
+}
+
+#figure .part {
+  stroke: var(--figure);
+  visibility: hidden;
+}
+
+#figure .part.show {
+  visibility: visible;
+}
