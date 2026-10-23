@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --bg: #f3f6fb;
+  --surface: #ffffff;
+  --ink: #1f2a3d;
+  --muted: #6b7a93;
+  --line: #c9d3e3;
+
+  --accent: #2b6fd6;
+  --correct: #2e9e5b;
+  --wrong: #e2483d;
+
+  --figure: #1f2a3d;
+  --gallows: #8a6a4a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141a24;
+    --surface: #1e2633;
+    --ink: #e8edf6;
+    --muted: #8a9ba8;
+    --line: #34405a;
+    --accent: #5d9bff;
+    --correct: #4cc27a;
+    --wrong: #ff6a5e;
+    --figure: #e8edf6;
+    --gallows: #b08a63;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.instructions {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}

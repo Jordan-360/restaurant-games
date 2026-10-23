@@ -7,11 +7,12 @@
 :root {
   --bg: #f3f6fb;
   --board: #ffffff;
-  --line: #c9d9e9;
+  --line: #c9d9e3;
   --ink: #1f2a3d;
   --x: #e2483d;
   --o: #2b6fd6;
   --win: #ffe08a;
+  --accent: #2b6fd6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +24,7 @@
     --x: #ff6a5e;
     --o: #5d9bff;
     --win: #6b5a1e;
+    --accent: #5d9bff;
   }
 }
 
@@ -31,7 +33,7 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--ink);
-  font-family: system-uo, sans-serif;
+  font-family: system-ui, sans-serif;
 
   touch-action: manipulation;
   user-select: none;
@@ -46,13 +48,6 @@ main {
   max-width: 420px;
   margin: 0 auto;
   padding: 24px 16px;
-}
-
-.home-link {
-  align-self: flex-start;
-  color: var(--ink);
-  font-weight: 600;
-  text-decoration: none;
 }
 
 h1 {
