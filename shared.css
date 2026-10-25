@@ -1,0 +1,7 @@
+.back-button {
+  display: inline-block;
+  margin: 16px 16px 0;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
